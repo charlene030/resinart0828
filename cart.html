@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="cart.css" />
+
+  </head>
+  <body>
+   
+    <div class="title">
+        <span class="topic">Cart</span>
+        <div class="smaller">            
+            THANKS FOR YOUR ADMIRE.
+        </div>  
+    </div>
+    <div class="container" id="container">
+      <div id="cart-container">
+        <div class="product" id="about-me">
+          Info
+      </div>
+      <div class="buy-items row">
+        <div class="pic col-4">
+          <img src="resin_pics/bae.jpg">
+        </div>
+        <div class="col-8">
+          <div class="item-title">
+            Bae
+          </div>
+          <div class="item-quan">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>          
+        </div>
+
+      </div>
+      <div class="buy-items row">
+        <div class="pic col-4">
+          <img src="resin_pics/ive.jpg">
+        </div>
+        <div class="col-8">
+          <div class="item-title">
+            IVE
+          </div>
+          <div class="item-quan">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+        
+        </div>
+
+      </div>
+      </div>
+      <div class="total-price">
+        <div class="product">Total</div>
+        
+        <div class="AllPrice" >
+          <span>$</span>
+          <span id="AllPrice">0</span>
+        </div>
+        <div class="shippingFee" >
+          <span>( free shipping fee )</span>
+          
+        </div>
+      </div>
+        <div id="itemPics"></div>
+        <div class="product">Shipping Information</div>
+        <div class="container">
+        
+          <div>
+            <span  class="input-group-text2">Receiver Name</span>
+            <input type="text" class="reg-input" id="name">        
+            <span  class="input-group-text2">Tel</span>        
+            <input type="text" class="reg-input" id="email">        
+            
+          </div>
+        </div>
+        <div class="send">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="noah()">
+                ORDER
+            </button>
+        </div>           
+            
+     </div>
+    </div>
+
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">ORDER FAILED</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div>
+                Sorry, this is a fake website.
+            </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+    <div class="footer">
+        &copy; copyright 2023 by KAO HUSAN LIN
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        
+    </script>
+    
+    <script src="cart.js"></script>
+  </body>
+</html>

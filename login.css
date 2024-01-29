@@ -1,0 +1,107 @@
+.title{
+    border-bottom:2px solid rgba(0, 0, 0);
+    text-align: left;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    color: rgb(27, 27, 27);
+    align-items: center;
+    border-bottom:2px solid rgb(0, 0, 0);
+}
+.title .topic{
+    animation: animate1 1s .3s;
+    opacity: 0;
+    animation-fill-mode :forwards;
+}
+.title .smaller{
+    animation: animate1 1s .9s;
+    opacity: 0;
+    animation-fill-mode :forwards;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+}
+@keyframes animate1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+.container{
+    position: relative;
+    /*height: 200px;*/
+    /*border:1px solid rgb(0, 0, 0);*/
+    margin-top: 25px;
+}
+.input-group{
+    display: flex;
+}
+.input-group-text{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    border: 0;
+}
+.reg-input{
+    border: 0;
+    border-bottom: 1px black solid;
+    width: 100%;
+    padding: 10px;    
+    margin-bottom: 25px
+}
+.send{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.send button{
+    border-radius: 15px;
+    /*padding: 5px 15px 5px 15px;*/
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    color: black;
+    border:1px solid rgb(0, 0, 0);
+    letter-spacing: 2px;
+}
+.send button:hover{
+
+    color: white;
+    background-color: black;
+    border:1px solid rgb(255, 255, 255);
+    transition: .5s;
+}
+.modal-title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.modal-body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+}
+.modal-content .modal-footer button{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    border:1px solid rgba(255, 255, 255, 0);
+}
+.btn-primary{
+    background-color: rgb(0, 0, 0);
+
+}
+.footer{
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(53, 53, 53);   
+    color: #a8a8a8;
+    padding: 20px 0;
+
+}

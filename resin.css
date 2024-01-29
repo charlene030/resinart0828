@@ -1,0 +1,226 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.header{
+    position: fixed;
+    z-index: 999;
+    top:0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);  
+    /*box-shadow: 0.1em 0.1em 0.15em #242424;*/
+    border-bottom:2px solid rgba(0, 0, 0); 
+}
+.header-txt{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    
+}
+.header-txt a{
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header-txt a:hover{
+    border-bottom:1px solid rgb(0, 0, 0);
+    
+}
+.title{
+    border-bottom:2px solid rgba(0, 0, 0);
+    margin-top: 50px;
+    text-align: left;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    color: rgb(27, 27, 27);
+    align-items: center;
+    /*text-shadow: 0.1em 0.1em 0.05em #f5f5f5;*/
+    border-bottom:2px solid rgb(0, 0, 0);
+}
+.title .topic{
+    animation: animate1 1s .3s;
+    opacity: 0;
+    animation-fill-mode :forwards;
+}
+.title .smaller{
+    animation: animate1 1s .9s;
+    opacity: 0;
+    animation-fill-mode :forwards;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+}
+@keyframes animate1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+.shopping{
+    font-size: 10px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: black;
+    border-radius: 10px;    
+    width: 85px;
+    height: 35px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.shopping:hover{
+    cursor: pointer;
+    transition: .5s;
+    bottom: 15px;
+    box-shadow: 0.1em 0.1em 0.15em #444444;
+}
+.shopping a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    position: relative;
+    /*height: 200px;*/
+    /*border:1px solid rgb(0, 0, 0);*/
+    margin-top: 25px;
+}
+.about-me{
+    padding: 0 10px 0 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    line-height: 35px;
+}
+.product{
+    width:fit-content;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 20px 10px 20px;
+    margin: 35px;
+    margin-left: 0;
+}
+.wrap{
+    position: relative;
+}
+.card{
+    height: auto;
+    width: 180px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 35px;
+}
+.card:hover{
+    transition: .5s;
+    box-shadow: 0.1em 0.1em 0.15em #444444;
+    cursor: pointer;
+}
+.card img{
+    border-bottom:1px solid rgb(170, 170, 170);
+
+}
+.card .txt{
+    font-size: 14px;
+    padding: 15px 18px 15px 18px;
+
+    font-weight: bold;
+}
+.card .price{
+    width: 100%;
+    text-align: right;
+    margin-top: 5px;
+}
+.add-cart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 70px;
+    opacity: 0;  
+}
+.wrap:hover .add-cart{
+    opacity: 100%;  
+    transition: .5s;
+
+}
+.add-cart button{
+    width: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 4em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 10px;
+    padding: 9px;
+    border: 0;
+    box-shadow: 0.1em 0.1em 0.15em #444444;
+}
+.see-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.see-more button{
+    margin: auto;
+    border: 0;
+    background-color: #dadada91;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+}
+.see-more button:hover{
+    box-shadow: 0.1em 0.1em 0.15em #444444;
+}
+@media screen and (min-width:768px) {
+    .see-more button{
+        position: absolute;
+        bottom:50%;
+    }
+    .header-txt{
+        justify-content: right;
+        padding-right: 25px;
+    }    
+}
+.footer{
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(53, 53, 53);   
+    color: #a8a8a8;
+    padding: 20px 0;
+
+}
+.col-6 ,.col-lg-4{
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes bgColor{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: black;
+    }
+}
+.animate{
+    animation: bgColor .6s linear;
+}
